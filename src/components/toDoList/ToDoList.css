@@ -1,0 +1,82 @@
+#to-do-list-container {
+    border: 1px solid black;
+    width: 560px;
+    padding: 20px 32px;
+    position: relative;
+}
+
+#to-do-list-container .to-do-list-title{
+    font-weight: 600;
+    text-align: center;
+}
+
+#to-do-list-container > div:nth-child(1) {
+    /* border: 1px solid black; */
+}
+
+#to-do-list-container #search-task-input {
+    margin-top: 56px;
+    width: 100%;
+    font-size: .8rem;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    height: 32px;
+    border: 1px solid black;
+}
+
+#to-do-list-container .bulk-action {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(213, 212, 212);
+}
+
+#to-do-list-container .bulk-action button {
+    border: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#to-do-list-container .bulk-action > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+#to-do-list-container .bulk-action .bulk-done {
+    background-color: rgb(41, 227, 193);
+}
+
+#to-do-list-container .bulk-action .bulk-remove {
+    background-color: rgb(216, 22, 0);
+}
+
+#to-do-list-container .bulk-action .bulk-done:hover {
+    cursor: pointer;
+    background-color: rgb(81, 172, 155);
+}
+
+#to-do-list-container .bulk-action .bulk-remove:hover {
+    background-color: rgb(149, 66, 57);
+    cursor: pointer;
+}
+
+#to-do-list-container .item-container {
+    overflow-y: scroll;
+    height: 600px;
+    margin: 40px 0 60px 0;
+}

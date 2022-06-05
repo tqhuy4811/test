@@ -1,0 +1,10 @@
+.App{
+    padding: 40px 0;    
+}
+
+#page-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

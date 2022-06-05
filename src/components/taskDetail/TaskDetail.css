@@ -1,0 +1,127 @@
+#detail-task-container { 
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid black;
+    padding: 20px 32px;
+}
+
+#detail-task-container .task-title {
+    margin-top: 56px;
+}
+
+#detail-task-container #task-title-input,
+#detail-task-container #task-due-date-input,
+#detail-task-container .select-box-value{
+    width: 100%;
+    font-size: .8rem;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    height: 32px;
+    border: 1px solid black;
+}
+
+#detail-task-container .task-description {
+    margin-top: 24px;
+}   
+
+#detail-task-container .input-title {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+#detail-task-container #task-description-input {
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box;
+}
+
+#detail-task-container .task-extra-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+#detail-task-container .task-extra-info > div {
+    flex: 1;
+}
+
+#detail-task-container .task-priority ul {
+    list-style-type: none;
+}
+
+#detail-task-container .select-box-value {
+    display: flex;
+    justify-content: space-between;
+}
+
+#detail-task-container ul {
+    border: 1px solid black;
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+#detail-task-container .popup-select-box.active ul {
+    visibility: visible;
+}
+
+#detail-task-container .popup-select-box.active .select-box-value {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#detail-task-container .bx-up-arrow-alt {
+    font-size: 1.2rem;
+    transition: all .1s ease-in-out;
+}
+
+#detail-task-container .popup-select-box.active .bx-up-arrow-alt {
+    transform: rotate(180deg)
+}
+
+#detail-task-container ul li:hover {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+#detail-task-container .add-button {
+    margin-top: 32px;
+}
+
+
+#detail-task-container .add-button button {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(63, 148, 9);
+    border: none;
+    border-radius: 4px;
+}
+
+#detail-task-container .add-button button:hover {
+    background-color: rgb(96, 205, 28);
+    cursor: pointer;
+}
+
+#detail-task-container .error-log {
+    color: rgb(142, 1, 1);
+    font-size: .7rem;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+#detail-task-container .error-log.active {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+

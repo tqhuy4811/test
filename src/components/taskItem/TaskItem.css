@@ -1,0 +1,48 @@
+#task-item {
+    
+}
+
+#task-item .task-item-brief {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-top: 32px;
+    padding: 8px 16px;
+}
+
+#task-item .task-item-brief > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#task-item .task-item-brief .detail-button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: rgb(38, 162, 190);
+    font-weight: 600;
+    font-size: .7rem;
+    color: white;
+}
+
+#task-item .task-item-brief .detail-button:hover {
+    background-color: rgb(23, 136, 161);
+    cursor: pointer;
+}
+
+#task-item .task-item-brief .remove-button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: rgb(218, 81, 54);
+    font-weight: 600;
+    font-size: .7rem;
+    color: white;
+}
+
+#task-item .task-item-brief .remove-button:hover {
+    background-color: rgb(208, 47, 15);
+    cursor: pointer;
+}
